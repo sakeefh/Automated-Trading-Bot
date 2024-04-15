@@ -1,7 +1,7 @@
 import alpaca_trade_api as tradeapi
 import time
 
-# Alpaca API credentials
+# Alpaca API credential
 API_KEY = ''
 SECRET_KEY = ''
 BASE_URL = 'https://paper-api.alpaca.markets'  # For paper trading, replace with live URL for real trading
