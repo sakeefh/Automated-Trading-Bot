@@ -44,15 +44,15 @@ def check_prices(symbol):
         print(f"Failed to get price data for {symbol}: {str(e)}")
 
 def main():
-    symbol = 'AAPL'  # Example stock symbol
+    symbol = 'AAPL' #Replace with any ticker 
     while True:
         current_price = check_prices(symbol)
         if current_price is not None:
-            if current_price < 100:  # Example condition, you should replace with your own trading strategy
-                buy(symbol, 1)  # Example: Buy 1 share if the price is less than 100
+            if current_price < 100: 
+                buy(symbol, 1) 
             elif current_price > 150:
-                sell(symbol, 1)  # Example: Sell 1 share if the price is greater than 150
-        time.sleep(60)  # Check every minute
+                sell(symbol, 1) 
+        time.sleep(60)  
 
 if __name__ == "__main__":
     main()
